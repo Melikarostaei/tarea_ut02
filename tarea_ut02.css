@@ -43,3 +43,21 @@
     color: black;             
     text-decoration: none;    
 }
+
+/*para el perfil*/
+.inicio {
+    margin-left: 220px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.campo {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.campo label {
+    width: 150px;
+    font-size: 14px;
+}
