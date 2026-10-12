@@ -1,5 +1,7 @@
 <?php
 $titulo_pagina = "Mejores clientes";
+$usuario_valido = "admin";
+$password_valido = "1234";
 $cliente = "";
 $gasto = "";
 $pedidos = "";
@@ -21,8 +23,8 @@ $media = "";
     <div class="header">
         <p><?php echo $titulo_pagina; ?></p>
         <div class="login">
-            <input type="text" placeholder="Usuario">
-            <input type="password" placeholder="Clave">
+            <input type="text" placeholder="Usuario" value="<?php echo $usuario_valido; ?>">
+            <input type="password" placeholder="Clave" value="<?php echo $password_valido; ?>">
             <button>Conectar</button>
         </div>
     </div>

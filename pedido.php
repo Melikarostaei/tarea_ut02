@@ -1,5 +1,7 @@
 <?php
 $titulo_pagina = "Generar pedido";
+$usuario_valido = "admin";
+$password_valido = "1234";
 $mensaje_oferta = "";
 $cantidad_sushi = 0; # de momento ponemos 0, pero sera la mult entre las unidades pedidas y su precio
 ?>
@@ -19,8 +21,8 @@ $cantidad_sushi = 0; # de momento ponemos 0, pero sera la mult entre las unidade
     <div class="header">
         <p><?php echo $titulo_pagina; ?></p>
         <div class="login">
-            <input type="text" placeholder="Usuario">
-            <input type="password" placeholder="Clave">
+            <input type="text" placeholder="Usuario" value="<?php echo $usuario_valido; ?>">
+            <input type="password" placeholder="Clave" value="<?php echo $password_valido; ?>">
             <button>Conectar</button>
         </div>
     </div>
@@ -60,7 +62,7 @@ $cantidad_sushi = 0; # de momento ponemos 0, pero sera la mult entre las unidade
                     <td><img src="sushi/niguiri_salmon.jpg" alt="Nigiri" width="150"></td>
                     <td>
                         <img src="alergenos/lacteos.png" alt="Alérgeno" width="20">
-                        <img src="alergenos/gluten.png"  alt="Alérgeno" width="20">
+                        <img src="alergenos/gluten.png" alt="Alérgeno" width="20">
                     </td>
                     <td><input type="number" value="0" min="0" style="width: 60px;"></td>
                     <td><strong><?php echo $cantidad_sushi; ?> €</strong></td>
@@ -69,10 +71,10 @@ $cantidad_sushi = 0; # de momento ponemos 0, pero sera la mult entre las unidade
                 <tr>
                     <td>Nigiri de Atún</td>
                     <td>2.25</td>
-                    <td><img src="sushi/niguiri_atun.jpg"  alt="Nigiri de Atún" width="150"></td>
+                    <td><img src="sushi/niguiri_atun.jpg" alt="Nigiri de Atún" width="150"></td>
                     <td>
                         <img src="alergenos/lacteos.png" alt="Alérgeno" width="20">
-                        <img src="alergenos/gluten.png"  alt="Alérgeno" width="20">
+                        <img src="alergenos/gluten.png" alt="Alérgeno" width="20">
                     </td>
                     <td><input type="number" value="0" min="0" style="width: 60px;"></td>
                     <td><strong><?php echo $cantidad_sushi; ?> €</strong></td>
@@ -81,7 +83,7 @@ $cantidad_sushi = 0; # de momento ponemos 0, pero sera la mult entre las unidade
                 <tr>
                     <td>Nigiri de Langostino</td>
                     <td>1.85</td>
-                    <td><img src="sushi/niguiri_langostino.jpg"alt="Nigiri de Langostino" width="150"></td>
+                    <td><img src="sushi/niguiri_langostino.jpg" alt="Nigiri de Langostino" width="150"></td>
                     <td>
                         <img src="alergenos/lacteos.png" alt="Alérgeno" width="20">
                     </td>
