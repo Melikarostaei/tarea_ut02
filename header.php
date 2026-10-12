@@ -20,5 +20,3 @@ $titulo_pagina = $titulo_pagina ?? "¡Bienvenido/a a mySushi!";
             <button>Conectar</button>
         </div>
     </div>
-
-    <div class="main-layout">
