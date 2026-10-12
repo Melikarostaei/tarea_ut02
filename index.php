@@ -1,5 +1,7 @@
 <?php
 $titulo_pagina = "¡Bienvenido/a a mySushi!";
+$usuario_valido = "admin";
+$password_valido = "1234";
 ?>
 
 <!DOCTYPE html>
@@ -14,10 +16,10 @@ $titulo_pagina = "¡Bienvenido/a a mySushi!";
 
 <body>
   <div class="header">
-    <h1>¡Bienvenido/a a mySushi!</h1>
+    <p><?php echo $titulo_pagina; ?></p>
     <div class="login">
-      <input type="text" placeholder="Usuario">
-      <input type="password" placeholder="Clave">
+      <input type="text" placeholder="Usuario" value="<?php echo $usuario_valido; ?>">
+      <input type="password" placeholder="Clave" value="<?php echo $password_valido; ?>">
       <button>Conectar</button>
     </div>
   </div>
@@ -32,8 +34,7 @@ $titulo_pagina = "¡Bienvenido/a a mySushi!";
     </ul>
   </div>
 
-  <div>
-    <h2>Página principal</h2>
+  <div class="inicio">
     <p>Bienvenido. Por favor inicia sesión o crea un usuario.</p>
   </div>
 
