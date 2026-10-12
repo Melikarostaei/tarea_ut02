@@ -1,0 +1,72 @@
+<?php
+$titulo_pagina = "Mejores clientes";
+$cliente = "";
+$gasto = "";
+$pedidos = "";
+$media = "";
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $titulo_pagina; ?></title>
+    <link rel="stylesheet" href="tarea_ut02.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <p><?php echo $titulo_pagina; ?></p>
+        <div class="login">
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Clave">
+            <button>Conectar</button>
+        </div>
+    </div>
+
+    <div class="menu_lateral">
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="perfil.php">Perfil</a></li>
+            <li><a href="pedido.php">Generar pedido</a></li>
+            <li><a href="carta.php">Gestión de carta</a></li>
+            <li><a href="cliente.php">Mejores clientes</a></li>
+        </ul>
+    </div>
+
+    <div class="inicio">
+        <table class="tabla_clientes">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Gasto</th>
+                    <th>Pedidos</th>
+                    <th>Media</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>moncloa</td>
+                    <td>317.33</td>
+                    <td>12</td>
+                    <td>26.44</td>
+                </tr>
+                <tr>
+                    <td><?php echo $cliente; ?></td>
+                    <td><?php echo $gasto; ?></td>
+                    <td><?php echo $pedidos; ?></td>
+                    <td><?php echo $media; ?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        AMT v1.0 2026/10/06
+    </div>
+</body>
+
+</html>
