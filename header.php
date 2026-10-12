@@ -1,7 +1,3 @@
-<?php
-// Si no se define un título, ponemos uno por defecto
-$titulo_pagina = $titulo_pagina ?? "¡Bienvenido/a a mySushi!";
-?>
 <!DOCTYPE html>
 <html lang="es">
 
