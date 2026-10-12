@@ -49,12 +49,6 @@ $media = "";
             </thead>
             <tbody>
                 <tr>
-                    <td>moncloa</td>
-                    <td>317.33</td>
-                    <td>12</td>
-                    <td>26.44</td>
-                </tr>
-                <tr>
                     <td><?php echo $cliente; ?></td>
                     <td><?php echo $gasto; ?></td>
                     <td><?php echo $pedidos; ?></td>
